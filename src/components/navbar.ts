@@ -102,7 +102,7 @@ export function Navbar() {
     </section>
 
     <div
-      class="absolute right-0 top-0 z-20 mt-[2rem] flex hidden h-[100dvh] w-[80vw] flex-col justify-between gap-6 bg-darkblue px-[4vw] py-[1vw] text-primarybg md:hidden"
+      class="absolute right-0 top-0 z-20 mt-[2rem] flex hidden h-[80dvh] min-h-fit w-[80vw] flex-col justify-between gap-6 bg-darkblue px-[4vw] py-[1vw] text-primarybg md:hidden"
       id="nav"
     >
       <div
