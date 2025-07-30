@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("./assets/fonts/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url("./assets/fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: var(--primarybg);
+}
+
+:root {
+  --primarybg: oklch(98.5% 0.002 247.839);
+  --darkblue: oklch(29.767% 0.10536 267.269);
+  --secondarybg: oklch(80.78% 0.00009 271.152);
+  --shadow: oklch(30.118% 0.00003 271.152);
+  --textwhite: oklch(98.5% 0.002 247.839);
+  --textblack: oklch(18.15% 0.00262 248.155);
+  --textgrey: oklch(56.443% 0.00294 229.665);
+
+  --LibreBaskerville: "LibreBaskerville", serif;
+  --LatoRegular: "LatoRegular", sans-serif;
+  --LatoBold: "LatoBold", sans-serif;
+  --DMSans: "DMSans", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: var(--primarybg);
+  margin: 0;
+  padding: 0;
+  font-family: "LatoRegular", sans-serif;
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.navlinks {
+  @apply flex h-[4rem] w-[100%] cursor-pointer content-center items-center whitespace-nowrap border-[0.1rem] px-[1vw] py-[0.5vw] font-LatoBold text-[0.8rem] font-bold transition duration-200 ease-in-out md:h-auto md:w-auto md:border-0 md:hover:-translate-y-[0.4rem];
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 30, 214, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+}
