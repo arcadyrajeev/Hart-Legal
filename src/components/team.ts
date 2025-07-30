@@ -1,6 +1,6 @@
 import { html } from "lit-html"; // (optional dummy tag)
 
-export function About() {
+export function Team() {
   return html`
     <section
       class="flex h-[100dvh] w-[100vw] bg-primarybg px-[4vw] py-[4vw]"
